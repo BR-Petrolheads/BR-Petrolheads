@@ -3,78 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Service auswählen</title>
+<title>BR Petrolheads</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+background:#000;
 }
 
-.container{
-    text-align:center;
-    background:white;
-    padding:40px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
-    width:90%;
-    max-width:400px;
-}
-
-h1{
-    margin-bottom:30px;
-    color:#333;
-}
-
-.button{
-    display:block;
-    text-decoration:none;
-    padding:18px;
-    margin:15px 0;
-    border-radius:10px;
-    color:white;
-    font-size:20px;
-    font-weight:bold;
-    transition:.2s;
-}
-
-.werkstatt{
-    background:#121212;
-}
-
-.aufbereitung{
-    background:#FFD700;
-}
-
-.button:hover{
-    transform:scale(1.03);
+img{
+width:100%;
+height:auto;
+display:block;
+max-width:600px;
+margin:auto;
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="container">
+<img src="landing.png" usemap="#services">
 
-<h1>Bitte wählen Sie einen Bereich</h1>
+<map name="services">
+    <area shape="rect"
+          coords="90,640,940,870"
+          href="mailto:Burhanrene@gmail.com?subject=Autowerkstatt">
 
-<a class="button werkstatt"
-href="mailto:Burhanrene@gmail.com?subject=Autowerkstatt&body=Hallo,%0D%0A%0D%0AIch interessiere mich für Ihre Werkstatt.%0D%0A">
-🔧 Autowerkstatt
-</a>
-
-<a class="button aufbereitung"
-href="mailto:Burhanrene@gmail.com?subject=Autoaufbereitung&body=Hallo,%0D%0A%0D%0AIch interessiere mich für Ihre Autoaufbereitung.%0D%0A">
-✨ Autoaufbereitung
-</a>
-
-</div>
+    <area shape="rect"
+          coords="90,920,940,1150"
+          href="mailto:Burhanrene@gmail.com?subject=Autoaufbereitung">
+</map>
 
 </body>
 </html>
