@@ -1,107 +1,115 @@
-/* BR PETROLHEADS */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* ==========================
+   BR PETROLHEADS
+   Premium Black & Gold Theme
+========================== */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-
-font-family:'Poppins',sans-serif;
-
-background:#050505;
-
-background-image:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-url("garage.jpg");
-
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-
-color:white;
-
-min-height:100vh;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
+    font-family:'Poppins',sans-serif;
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
 }
 
-.container{
-
-width:95%;
-max-width:550px;
-
-padding:40px 25px;
-
-text-align:center;
-
-backdrop-filter:blur(8px);
-
+/* Hintergrund */
+.background{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:
+        linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.88)),
+        url("garage.jpg");
+    background-size:cover;
+    background-position:center;
+    z-index:-2;
 }
+
+/* Goldene Lichtpunkte */
+.background::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(212,175,55,.15),transparent 35%),
+        radial-gradient(circle at 80% 70%,rgba(212,175,55,.10),transparent 35%);
+}
+
+/* Inhalt */
+
+.overlay{
+    width:100%;
+    max-width:650px;
+    margin:auto;
+    padding:40px 20px 60px;
+}
+
+/* Logo */
 
 .logo{
+    display:block;
+    width:180px;
+    margin:20px auto 30px;
+    filter:
+    drop-shadow(0 0 15px rgba(212,175,55,.8))
+    drop-shadow(0 0 35px rgba(212,175,55,.5));
+}
 
-width:190px;
+header{
+    text-align:center;
+}
 
-margin-bottom:30px;
+header h2{
 
-filter:
-drop-shadow(0 0 15px #d4af37)
-drop-shadow(0 0 40px #8d6b17);
+    color:#d8b45b;
+
+    letter-spacing:6px;
+
+    font-weight:300;
+
+    font-size:18px;
 
 }
 
-h2{
+header h1{
 
-font-weight:300;
+    font-size:46px;
 
-font-size:18px;
+    color:#d4af37;
 
-letter-spacing:6px;
+    margin-top:10px;
 
-color:#e4d4a0;
+    text-shadow:
 
-margin-bottom:10px;
-
-}
-
-h1{
-
-font-size:46px;
-
-font-weight:700;
-
-color:#d4af37;
-
-letter-spacing:2px;
-
-margin-bottom:15px;
-
-text-shadow:
-
-0 0 8px #d4af37,
-
-0 0 18px rgba(212,175,55,.35);
+    0 0 12px rgba(212,175,55,.6);
 
 }
 
-p{
+header p{
 
-color:#d9d9d9;
+    color:#ddd;
 
-font-size:18px;
+    margin-top:15px;
 
-margin-bottom:45px;
+    margin-bottom:45px;
+
+    font-size:18px;
 
 }
 
-.button{
+/* Karten */
+
+.card{
 
 display:flex;
 
@@ -109,83 +117,95 @@ align-items:center;
 
 justify-content:space-between;
 
-text-decoration:none;
+background:rgba(18,18,18,.88);
 
-background:rgba(10,10,10,.92);
-
-border:2px solid #b8860b;
+border:2px solid rgba(212,175,55,.65);
 
 border-radius:24px;
 
-padding:25px;
+padding:28px;
 
 margin-bottom:25px;
 
+text-decoration:none;
+
 transition:.35s;
+
+backdrop-filter:blur(10px);
 
 box-shadow:
 
-0 0 20px rgba(212,175,55,.15);
+0 0 18px rgba(212,175,55,.15);
 
 }
 
-.button:hover{
+.card:hover{
 
-transform:translateY(-5px);
+transform:translateY(-6px);
 
-border-color:#ffd700;
+border-color:#FFD700;
 
 box-shadow:
 
 0 0 35px rgba(255,215,0,.45);
 
-background:#111;
-
 }
 
-.left{
+/* Symbol */
+
+.icon{
+
+width:80px;
+
+height:80px;
 
 display:flex;
 
 align-items:center;
 
-}
+justify-content:center;
 
-.icon{
-
-font-size:46px;
+font-size:42px;
 
 color:#d4af37;
 
-margin-right:25px;
+margin-right:20px;
 
 }
 
-.title{
+/* Text */
 
-font-size:28px;
+.text{
 
-font-weight:700;
+flex:1;
+
+}
+
+.text h3{
+
+font-size:30px;
 
 color:#d4af37;
 
+margin-bottom:6px;
+
 }
 
-.subtitle{
+.text span{
+
+color:#ddd;
 
 font-size:15px;
-
-margin-top:5px;
-
-color:#d8d8d8;
 
 letter-spacing:1px;
 
 }
 
+/* Pfeil */
+
 .arrow{
 
-font-size:38px;
+font-size:30px;
 
 color:#d4af37;
 
@@ -193,39 +213,103 @@ transition:.3s;
 
 }
 
-.button:hover .arrow{
+.card:hover .arrow{
 
 transform:translateX(10px);
 
 }
 
-footer{
+/* Goldene Linie */
 
-margin-top:50px;
+.line{
 
-color:#bfa04a;
-
-font-size:14px;
-
-letter-spacing:4px;
-
-opacity:.9;
-
-}
-
-.gold-line{
-
-width:120px;
+width:180px;
 
 height:2px;
 
 background:#d4af37;
 
-margin:25px auto;
+margin:55px auto 25px;
 
-box-shadow:0 0 10px gold;
+box-shadow:
+
+0 0 12px gold;
 
 }
+
+/* Footer */
+
+footer{
+
+text-align:center;
+
+color:#b99739;
+
+font-size:14px;
+
+letter-spacing:5px;
+
+}
+
+/* Ladebildschirm */
+
+#loader{
+
+position:fixed;
+
+inset:0;
+
+background:#000;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+}
+
+.spinner{
+
+width:80px;
+
+height:80px;
+
+border:5px solid rgba(255,255,255,.1);
+
+border-top:5px solid #d4af37;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+margin-bottom:20px;
+
+}
+
+#loader h2{
+
+color:#d4af37;
+
+letter-spacing:5px;
+
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* Mobil */
 
 @media(max-width:600px){
 
@@ -235,33 +319,43 @@ width:150px;
 
 }
 
-h1{
+header h1{
 
 font-size:34px;
 
 }
 
-.title{
+.text h3{
 
-font-size:22px;
+font-size:23px;
 
 }
 
-.subtitle{
+.text span{
 
 font-size:13px;
 
 }
 
+.card{
+
+padding:22px;
+
+}
+
 .icon{
 
-font-size:38px;
+font-size:34px;
+
+width:60px;
+
+height:60px;
 
 }
 
 .arrow{
 
-font-size:30px;
+font-size:24px;
 
 }
 
