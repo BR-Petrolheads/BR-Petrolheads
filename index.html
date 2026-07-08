@@ -1,60 +1,105 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR Petrolheads</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-<title>BR Petrolheads</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/6f4f8e6d3a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+<div id="loader">
+    <div class="spinner"></div>
+    <h2>BR PETROLHEADS</h2>
+</div>
+
+<div class="background"></div>
+
 <div class="overlay">
 
-<img src="logo.png" class="logo">
+<header>
 
-<h2>Willkommen bei</h2>
+<img src="logo.png" class="logo" alt="BR Petrolheads">
+
+<h2>WILLKOMMEN BEI</h2>
 
 <h1>BR PETROLHEADS</h1>
 
-<p>Bitte wählen Sie Ihren gewünschten Service.</p>
+<p>Bitte wählen Sie Ihren gewünschten Service</p>
 
-<a class="button"
+</header>
+
+<section class="services">
+
+<a class="card"
 href="mailto:Burhanrene@gmail.com?subject=Autowerkstatt">
 
-<div class="title">🔧 Autowerkstatt</div>
+<div class="icon">
 
-<div class="subtitle">
-Reparatur • Wartung • Diagnose
+<i class="fas fa-tools"></i>
+
+</div>
+
+<div class="text">
+
+<h3>Autowerkstatt</h3>
+
+<span>Reparatur • Wartung • Diagnose</span>
+
+</div>
+
+<div class="arrow">
+
+<i class="fas fa-chevron-right"></i>
+
 </div>
 
 </a>
 
-<a class="button"
+<a class="card"
 href="mailto:Burhanrene@gmail.com?subject=Autoaufbereitung">
 
-<div class="title">✨ Autoaufbereitung</div>
+<div class="icon">
 
-<div class="subtitle">
-Innen- & Außenreinigung • Politur
+<i class="fas fa-car-side"></i>
+
+</div>
+
+<div class="text">
+
+<h3>Autoaufbereitung</h3>
+
+<span>Innen • Außen • Politur</span>
+
+</div>
+
+<div class="arrow">
+
+<i class="fas fa-chevron-right"></i>
+
 </div>
 
 </a>
+
+</section>
 
 <footer>
 
-Leidenschaft • Qualität • Vertrauen
+<div class="line"></div>
+
+<p>LEIDENSCHAFT · QUALITÄT · VERTRAUEN</p>
 
 </footer>
 
 </div>
 
-</body>
+<script src="script.js"></script>
 
+</body>
 </html>
