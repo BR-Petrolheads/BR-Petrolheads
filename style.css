@@ -32,7 +32,7 @@ body{
         url("garage.jpg");
     background-size:cover;
     background-position:center;
-    z-index:-2;
+    z-index:-1;
 }
 
 /* Goldene Lichtpunkte */
